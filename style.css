@@ -116,9 +116,7 @@ button{
 .repair-status__text{
     display: none;
 }
-.nav{
-    overflow: scroll;
-}
+
 .title{
     font-size: 28px;
     font-weight: 700;
@@ -133,8 +131,6 @@ button{
 .hero-title::before{
     content:'';
     position: absolute;
-    /*top:50%;*/
-    /*transform: translateY(-50%);*/
     left: 0;
     display: block;
     height: 36px;
@@ -142,12 +138,15 @@ button{
 }
 
 .nav{
-    margin-bottom: 14px;
+    margin-bottom: 10px;
+    height: 42px;
+    overflow: hidden;
+}
+.nav__list{
+    padding-bottom: 15px;
+    overflow-x: auto;
 }
 
-.nav__list{
-    margin-bottom: 10px;
-}
 .nav__item{
     display: flex;
     align-items: center;

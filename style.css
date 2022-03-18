@@ -31,6 +31,10 @@ ul li{
 button{
     font-family: 'TT Lakes','Montserrat' , sans-serif;
     cursor: pointer;
+    border: none;
+    outline: none;
+    user-select:none;
+    width: max-content;
 }
 
 .flex{
@@ -41,10 +45,14 @@ button{
     height: 88px;
 }
 .header__wrapper{
-    padding: 19px 20px 19px 16px;
+    padding: 12px 16px 0 16px;
     justify-content: space-between;
     align-items: center;
 }
+
+.logo{
+     padding-top: 3px;
+ }
 .header__inner{
     align-items: center;
 }
@@ -52,9 +60,6 @@ button{
     gap: 16px;
 }
 
-.repair-status{
-    gap: 16px;
-}
 .btn-round{
     padding: 0;
     width: 40px;
@@ -81,26 +86,31 @@ button{
 .hero{
     display: flex;
     flex-direction: column;
-    gap:16px;
+    /*gap:16px;*/
 }
-.hero{
-}
+
 .padding-box{
     padding-right: 16px;
     padding-left: 16px;
  }
 
+.repair-status{
+    align-items: center;
+    gap:16px;
+}
+
 .vertical-line{
     width: 2px;
     height: 32px;
+    margin-right: 4px;
     background-color: #EAEAEA;
 }
 .vertical-line--header-inner{
     display: none;
+    margin-left: 4px;
 }
-
-.repair-status{
-    padding-right: 0px;
+.vertical-line--repair-status{
+    margin-right: 4px;
 }
 
 .repair-status__text{
@@ -116,19 +126,19 @@ button{
 }
 .hero-title{
     position: relative;
-    padding-top: 26px;
+    margin-top: 26px;
     padding-bottom: 24px;
  }
 
 .hero-title::before{
     content:'';
     position: absolute;
+    /*top:50%;*/
+    /*transform: translateY(-50%);*/
     left: 0;
     display: block;
-    height: 34px;
-    border-left: 3px solid #41F6D7;
-    border-top: 2px solid transparent;
-    border-bottom: 2px solid transparent;
+    height: 36px;
+    border: 2px solid #41F6D7;
 }
 
 .nav{
@@ -156,6 +166,7 @@ button{
 .nav__link--hero:focus{
     outline:none;
     border: 2px solid #B8FFEC;
+    background-color: #ffffff;
 }
 .content-wrapper{
     align-items: center;
@@ -180,10 +191,10 @@ button{
     letter-spacing: 0.2px;
 }
 
-.btn-next {
+.btn-more {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 5px;
     font-size: 16px;
     font-weight: 600;
     color: #1B1C21;
@@ -192,10 +203,11 @@ button{
     background-color: transparent;
 }
 
-.btn-next__icon{
-    width: 24px;
-    height: 24px;
-    padding: 5px;
+.btn__arrow-icon{
+    margin-left: 6px;
+    margin-right: 4px;
+    width: 10px;
+    height: 10px;
 }
 .hero__image{
     width: 100%;
@@ -211,7 +223,10 @@ button{
 
 @media (min-width:768px){
     .header__wrapper {
-        padding: 19px 28px 19px 24px;
+        padding: 12px 24px 0 24px;
+    }
+    .logo{
+        padding-top: 5px;
     }
 
     .vertical-line--header-inner{
@@ -220,9 +235,10 @@ button{
     .contacts{
         display: flex;
     }
-    .header__inner{
-        gap:20px;
+    .header__inner--right{
+        gap:18px;
     }
+
 
     .content-wrapper{
         flex-direction: row;
@@ -231,20 +247,18 @@ button{
     }
     .padding-box {
         padding-right: 24px;
-        padding-left: 32px;
+        padding-left: 24px;
     }
     .hero-title {
-        padding-top: 32px;
-        padding-bottom: 26px;
-        padding-left: 21px;
+        margin-top: 30px;
+        padding-bottom: 28px;
+        padding-left: 22px;
         letter-spacing: -0.4px;
     }
     .nav {
         margin-bottom: 18px;
     }
-    .nav__item {
-        padding-left: 6px;
-    }
+
     .hero-content{
         line-height: 20px;
         letter-spacing: -0.9px;
@@ -258,9 +272,6 @@ button{
     .hero-content{
         padding-bottom: 16px;
     }
-    .btn-next {
-        gap: 8px;
-    }
 
     .hero__image{
         min-width: 360px;
@@ -268,18 +279,22 @@ button{
     .hero-info{
         text-align: left;
         height: 100%;
-        font-size: 16px;
         gap: 18px;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+    }
+    .hero-info__text{
+        margin-top: -20px;
+        white-space: pre-line;
     }
     .nav {
-        margin-bottom: 24px;
+        margin-bottom: 16px;
     }
-
-
 
 }
 
-@media (min-width:1120px){
+@media (min-width:1119px){
     .header {
         height: 0px;
     }
@@ -290,23 +305,24 @@ button{
     .vertical-line--repair-status{
         display: none;
     }
-    .hero {
-        gap: 10px;
-    }
+    /*.hero {*/
+    /*    gap: 10px;*/
+    /*}*/
     .hero-title {
-        padding-top: 45px;
+        marging-top: 45px;
         padding-bottom: 0px;
         padding-left: 32px;
         letter-spacing: -0.5px;
     }
     .repair-status{
         position: absolute;
-        right: 30px;
-        transform: translateY(46px);
+        right: 32px;
+        transform: translateY(38px);
         gap: 32px;
     }
     .repair-status__box{
-        gap: 10px ;
+        align-items: center;
+        gap: 8px ;
     }
     .repair-status__text{
         display: block;
@@ -318,21 +334,21 @@ button{
     }
     .nav,
     .nav__list{
+        padding-top: 5px;
         margin-bottom: 0px;
     }
-    .nav__item{
-        padding-left: 12px;
-    }
+
     .nav__link--hero {
-        padding: 8px 10px;
+        padding: 8px 20px;
     }
     .content-wrapper{
         padding-left: 34px;
+        padding-right: 28px;
     }
     .hero-content{
         height: 100%;
         align-self: flex-start;
-        padding-top: 20px;
+        padding-top: 28px;
         gap:0;
     }
     .hero-info{

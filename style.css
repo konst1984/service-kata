@@ -39,7 +39,6 @@ button{
 
 .flex{
     display: flex;
-    /*align-items: center;*/
 }
 .header{
     height: 88px;
@@ -137,13 +136,18 @@ button{
     border: 2px solid #41F6D7;
 }
 
+.nav--hero{
+    margin-bottom: 14px;
+}
+
 .nav{
-    margin-bottom: 10px;
+    margin-bottom: 23px;
     height: 42px;
     overflow: hidden;
 }
+
 .nav__list{
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     overflow-x: auto;
 }
 
@@ -160,7 +164,10 @@ button{
     border-radius: 6px;
     background-color: transparent;
     color: #7E7E82;
+    line-height: 24px;
+    letter-spacing: -0.2px;
 }
+
 
 .nav__link--hero:focus{
     outline:none;
@@ -193,7 +200,8 @@ button{
 .btn-more {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
+    padding-right: 5px;
     font-size: 16px;
     font-weight: 600;
     color: #1B1C21;
@@ -209,15 +217,15 @@ button{
     height: 10px;
 }
 .hero__image{
+    height: 178px;
     width: 100%;
     border-radius: 5px;
     overflow: hidden;
 }
 .hero__image img{
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     object-fit: cover;
-    min-width: 320px;
 }
 
 @media (min-width:768px){
@@ -238,11 +246,10 @@ button{
         gap:18px;
     }
 
-
     .content-wrapper{
         flex-direction: row;
         gap:40px;
-        padding: 0 24px;
+        padding: 0 24px 49px;
     }
     .padding-box {
         padding-right: 24px;
@@ -257,28 +264,31 @@ button{
     .nav {
         margin-bottom: 18px;
     }
+    .nav__link {
+        padding: 7px 15px;
+    }
 
+    .btn-more{
+        gap: 12px;
+        letter-spacing: -0.3px;
+    }
     .hero-content{
+        padding: 0 0 14px 0;
+        height: 208px;
+        gap:10px;
         line-height: 20px;
         letter-spacing: -0.9px;
     }
 
-    .hero-content{
-        padding: 0;
-        height: 208px;
-    }
-
-    .hero-content{
-        padding-bottom: 16px;
-    }
-
     .hero__image{
+        width: 52%;
+        height: 208px;
         min-width: 360px;
     }
     .hero-info{
         text-align: left;
         height: 100%;
-        gap: 18px;
+        gap: 22px;
         font-size: 14px;
         line-height: 20px;
         letter-spacing: 0.2px;
@@ -288,7 +298,7 @@ button{
         white-space: pre-line;
     }
     .nav {
-        margin-bottom: 16px;
+        margin-bottom: 25px;
     }
 
 }
@@ -304,20 +314,20 @@ button{
     .vertical-line--repair-status{
         display: none;
     }
-    /*.hero {*/
-    /*    gap: 10px;*/
-    /*}*/
+
     .hero-title {
-        marging-top: 45px;
-        padding-bottom: 0px;
-        padding-left: 32px;
+        margin-top: 44px;
+        padding-bottom: 0;
+        padding-left: 34px;
         letter-spacing: -0.5px;
     }
+
     .repair-status{
         position: absolute;
         right: 32px;
-        transform: translateY(38px);
+        transform: translateY(50px);
         gap: 32px;
+        z-index:1;
     }
     .repair-status__box{
         align-items: center;
@@ -326,15 +336,18 @@ button{
     .repair-status__text{
         display: block;
     }
-
+    .nav{
+        height: auto;
+        padding-top: 4px;
+        margin-bottom: 0;
+    }
     .nav__list{
         overflow: hidden;
         flex-wrap:wrap;
-    }
-    .nav,
-    .nav__list{
-        padding-top: 5px;
-        margin-bottom: 0px;
+        padding-bottom: 0;
+        padding-left: 10px;
+        padding-top: 4px;
+        margin-bottom: 0;
     }
 
     .nav__link--hero {
@@ -347,14 +360,23 @@ button{
     .hero-content{
         height: 100%;
         align-self: flex-start;
-        padding-top: 28px;
-        gap:0;
+        padding-top: 26px;
+        gap:0px;
     }
     .hero-info{
         gap:20px;
     }
     .hero__image {
+        min-height: 307px;
         min-width: 532px;
+    }
+    .hero-info__text {
+         margin-top: 0;
+         white-space: normal;
+        letter-spacing: 0.2px;
+    }
+    .btn-more{
+        gap:10px;
     }
 
 }

@@ -1,41 +1,37 @@
 @font-face {
   font-family: 'TT Lakes';
-  src:url('../assets/fonts/TTLakes-Regular.woff') format('woff');
+  src: url('../assets/fonts/TTLakes-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
-  font‑display:swap;
+  font‑display: swap;
 }
 
 @font-face {
   font-family: 'TT Lakes';
-  src:url('../assets/fonts/TTLakes-Medium.woff') format('woff');
+  src: url('../assets/fonts/TTLakes-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
-  font‑display:swap;
+  font‑display: swap;
 }
 
 @font-face {
   font-family: 'TT Lakes';
-  src:url('../assets/fonts/TTLakes-Bold.woff') format('woff');
+  src: url('../assets/fonts/TTLakes-Bold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
-  font‑display:swap;
+  font‑display: swap;
 }
 
 @font-face {
   font-family: 'TT Lakes';
-  src:url('../assets/fonts/TTLakes-DemiBold.woff') format('woff');
+  src: url('../assets/fonts/TTLakes-DemiBold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
-  font‑display:swap;
+  font‑display: swap;
 }
 
-
-
-
-
-
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
   font-family: 'TT Lakes', 'Montserrat', sans-serif;
@@ -56,11 +52,11 @@ a:visited {
 }
 
 button:focus {
-  outline: 2px solid #41F6D7;
+  outline: 2px solid #41f6d7;
 }
 
 a:focus-visible {
-  outline: 2px solid #41F6D7;
+  outline: 2px solid #41f6d7;
 }
 
 ul li {
@@ -122,7 +118,7 @@ button {
 }
 
 .section-hero {
-  background: #F8F8F8;
+  background: #f8f8f8;
 }
 
 .hero {
@@ -145,7 +141,7 @@ button {
   width: 2px;
   height: 32px;
   margin-right: 4px;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
 }
 
 .vertical-line--header-inner {
@@ -179,7 +175,7 @@ button {
   left: 0;
   display: block;
   height: 36px;
-  border: 2px solid #41F6D7;
+  border: 2px solid #41f6d7;
 }
 
 .nav--hero {
@@ -210,7 +206,7 @@ button {
   border: 2px solid transparent;
   border-radius: 6px;
   background-color: transparent;
-  color: #7E7E82;
+  color: #7e7e82;
   line-height: 24px;
   letter-spacing: -0.2px;
 }
@@ -218,7 +214,7 @@ button {
 .nav__link--hero:focus,
 .nav__link--hero:hover {
   outline: none;
-  border: 2px solid #B8FFEC;
+  border: 2px solid #b8ffec;
   background-color: #ffffff;
 }
 
@@ -226,7 +222,7 @@ button {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  gap: 14px
+  gap: 14px;
 }
 
 .hero-content {
@@ -256,7 +252,7 @@ button {
   padding-right: 5px;
   font-size: 16px;
   font-weight: 600;
-  color: #1B1C21;
+  color: #1b1c21;
   outline: none;
   border: none;
   background-color: transparent;
@@ -366,7 +362,6 @@ button {
   .nav {
     margin-bottom: 18px;
   }
-
 }
 
 @media (min-width: 1119px) {
@@ -458,5 +453,4 @@ button {
   .btn-more {
     gap: 10px;
   }
-
 }
